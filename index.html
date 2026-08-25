@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estoque</title>
+</head>
+<body>
+            <h1>Estoque</h1>
+
+    <form>
+        <!--codigo-->
+        <label for="idProduto">id do produto</label>
+        <input type="text" id="cod_txt"  required>
+         <br>
+         <!--estoque inicial-->
+         <label>Estoque inicial</label>
+         <input type="number" name="init_txt" id="init_txt">
+         <br>
+        <!--nome produto-->
+        <label for="nomeProduto">nome do produto</label>
+        <input type="text" id="nomeProduto" required>
+        <br>
+         <!--atualizar-->
+        <label for="update">atualização do produto</label>
+        <input type="number" id="up_txt" min="1">
+        <br>
+         <!--botões-->
+        <input type="button" id="btn_retirar" value="retirar">
+        <input type="button" id="btn_atualizar" value="adicionar">
+        <input type="button" id="btn_cad" value="cadastrar">
+
+    </form>
+     <p id="resultado"></p>
+    <script type="module" src="App.js"></script>
+    
+</body>
+</html>
+
